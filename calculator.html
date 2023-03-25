@@ -1,0 +1,46 @@
+<!RAKSHITHA.N>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Calulator</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="calculator.css">
+    </head>
+    <body>
+        <div class="outer">
+            <input type="text" id = 'view'>
+            <div id="display">
+                <button class="c" onclick="view.value=''">AC</button>
+                <button class="symb" onclick="view.value+='('">(</button>
+                <button class="symb" onclick="view.value+=')'">)</button>
+                <button class="symb" onclick="back()">←</button>
+                <br>
+                <button class="symb" onclick="pi('&pi;')">&pi;</button>
+                <button class="symb" onclick="solve('.')">.</button>
+                <button class="symb" onclick="solve('%')">%</button>
+                <button class="symb" onclick="solve('/')">/</button>
+                <br>
+                <button class="num" onclick="solve('7')">7</button>
+                <button class="num" onclick="solve('8')">8</button>
+                <button class="num" onclick="solve('9')">9</button>
+                <button class="symb" onclick="solve('*')">&times;</button>
+                <br>
+                <button class="num" onclick="solve('4')">4</button>
+                <button class="num" onclick="solve('5')">5</button>
+                <button class="num" onclick="solve('6')">6</button>
+                <button class="symb" onclick="solve('+')">+</button>
+                <br>
+                <button class="num" onclick="solve('1')">1</button>
+                <button class="num" onclick="solve('2')">2</button>
+                <button class="num" onclick="solve('3')">3</button>
+                <button class="symb" onclick="solve('-')">-</button>
+                <br>
+                <button class="num" onclick="solve('00')">00</button>
+                <button class="num" onclick="solve('0')">0</button>
+                <button class="equal" onclick="equal('=')">=</button>
+            </div>
+        </div>
+        <script src="calculator.js"></script>
+    </body>
+</html>
+
